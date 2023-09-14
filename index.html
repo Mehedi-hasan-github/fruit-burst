@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit-Brust</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css" />
+    <!--  tailwind css and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#FFF",
+              "nav-color": "#F85559",
+              radious: "50px",
+            },
+            borderRadius: {
+              custom: "3.5rem",
+            },
+            fontSize: {
+              smtext: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!--  google fonts work sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .google-font {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="google-font container mx-auto">
+    <header>
+      <div
+        class="navbar bg-base-100 w-auto flex bg-nav-color h-28 rounded-custom justify-between mt-4"
+      >
+        <!-- <div class="flex-none gap-2"> -->
+        <ul class="flex flex-rows justify-between items-center gap-3 ms-2">
+          <li>
+            <a class="text-white text-1.2 font-light">Home</a>
+          </li>
+          <li>
+            <a class="text-white text-1.2 font-light">About Us</a>
+          </li>
+          <li>
+            <a class="text-white text-1.2 font-light">Shop</a>
+          </li>
+          <li>
+            <a class="text-white text-1.2 font-light">All Fruits</a>
+          </li>
+        </ul>
+        <div class="flex justify-center items-center">
+          <img class="w-10" src="images/logo.png" alt="" />
+          <h1 class="text-5xl font-bold text-white">Fruit Burst</h1>
+        </div>
+
+        <div class="form-control">
+          <input
+            class="relative p-4 rounded-custom mr-4 w-100 outline-0"
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered w-24 md:w-auto"
+          />
+          <img
+            class="absolute mt-4 ms-20 ps-20"
+            src="images/Frame.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
