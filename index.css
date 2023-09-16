@@ -92,3 +92,16 @@
     margin: 0px 0px 0px 20px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .icon {
+    margin-left: 20px;
+  }
+  .icon h1 {
+    font-width: 400;
+  }
+  .nav-parent {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
